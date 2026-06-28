@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taner Hansen — Data Analyst</title>
+
+<style>
+
+  /* ============================================ */
+  /*  COLORS — change these to change the theme    */
+  /* ============================================ */
+  :root {
+    --background: #11151C;   /* page background */
+    --text: #E7E5DE;         /* normal text color */
+    --heading: #FFFFFF;      /* headings color */
+    --accent: #E0A458;       /* highlight color (links, titles) */
+    --card: #1B2230;         /* background of boxes/cards */
+    --border: #2A3242;       /* lines between sections */
+  }
+
+  /* ============================================ */
+  /*  BASIC PAGE SETUP                             */
+  /* ============================================ */
+  body {
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    color: var(--heading);
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  section {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ============================================ */
+  /*  HERO (top section with your name)            */
+  /* ============================================ */
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+  }
+
+  .hero .role {
+    color: var(--accent);
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  /* ============================================ */
+  /*  BUTTONS / LINKS                              */
+  /* ============================================ */
+  .button {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px 5px 0 0;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background: var(--accent);
+    color: var(--background);
+  }
+
+  /* ============================================ */
+  /*  SKILLS LIST (shown as little tags/pills)     */
+  /* ============================================ */
+  .skill-tag {
+    display: inline-block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /* ============================================ */
+  /*  PROJECT / CARD BOXES                         */
+  /* ============================================ */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: var(--heading);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ======================================== -->
+  <!-- HERO SECTION                              -->
+  <!-- ======================================== -->
+  <section class="hero">
+    <h1>Taner Hansen</h1>
+    <p class="role">Data Analyst</p>
+    <p>Currently in graduate school — M.S. Business Analytics &amp; Data Science</p>
+
+    <!-- TODO: replace # with your real links -->
+    <a class="button" href="https://www.linkedin.com/in/taner-hansen" target="_blank">LinkedIn</a>
+    <a class="button" href="https://github.com/tahansen2000" target="_blank">GitHub</a>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- ABOUT SECTION                             -->
+  <!-- ======================================== -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a graduate student pursuing an M.S. in Business Analytics and Data Science
+      at Oklahoma State University, with a background in SQL and Python. I'm working
+      toward a career as a data analyst / data scientist.
+    </p>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- EDUCATION SECTION                         -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Education</h2>
+
+    <p>
+      <strong>M.S. Business Analytics and Data Science</strong><br>
+      Oklahoma State University — 2025 to present
+    </p>
+
+    <p>
+      <strong>Graduate Certificate, Information Assurance</strong><br>
+      Oklahoma State University — 2025 to 2026
+    </p>
+
+    <p>
+      <strong>B.A.</strong><br>
+      Oklahoma Christian University — 2019 to 2023
+    </p>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- SKILLS SECTION                            -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Skills</h2>
+
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">SQL</span>
+    <span class="skill-tag">Tableau</span>
+    <span class="skill-tag">Google Analytics</span>
+    <span class="skill-tag">Google Looker Studio</span>
+    <span class="skill-tag">BASH</span>
+    <span class="skill-tag">PowerShell</span>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- CERTIFICATION SECTION                     -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Certification</h2>
+    <p>PCEP — Certified Entry-Level Data Analyst with Python</p>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- PROJECTS SECTION                          -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Projects</h2>
+    
+    <div class="card">
+      <h3><a href="https://github.com/tahansen2000/heart-disease-risk-prediction" target="_blank">Heart Disease Risk Prediction &amp; Clustering</a></h3>
+      <p>
+        Predicting heart disease diagnosis and identifying patient risk clusters
+        using a Neural Network and K-Means on the UCI Heart Disease dataset.
+      </p>
+    </div>
+
+    <!-- To add another project, copy the block above and paste it here,
+         then change the title, link, and description -->
+
+  </section>
+
+  <!-- ======================================== -->
+  <!-- CONTACT / FOOTER                          -->
+  <!-- ======================================== -->
+  <section style="border-bottom: none;">
+    <h2>Contact</h2>
+    <a class="button" href="https://www.linkedin.com/in/taner-hansen" target="_blank">LinkedIn</a>
+    <a class="button" href="mailto:tahansen2000@icloud.com">Email</a>
+  </section>
+
+</div>
+
+</body>
+</html>
