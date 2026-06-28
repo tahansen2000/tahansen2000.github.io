@@ -10,14 +10,14 @@
   /* ============================================ */
   /*  COLORS — change these to change the theme    */
   /* ============================================ */
-  :root {
-    --background: #11151C;   /* page background */
-    --text: #E7E5DE;         /* normal text color */
-    --heading: #FFFFFF;      /* headings color */
-    --accent: #E0A458;       /* highlight color (links, titles) */
-    --card: #1B2230;         /* background of boxes/cards */
-    --border: #2A3242;       /* lines between sections */
-  }
+:root {
+  --background: #161F1B;
+  --text: #E8E4D9;   
+  --heading: #FFFFFF;
+  --accent: #C9874C;      
+  --card: #1F2A24;
+  --border: #324038;
+}
 
   /* ============================================ */
   /*  BASIC PAGE SETUP                             */
@@ -29,6 +29,14 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
+  }
+  .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;      
+  border: 3px solid var(--accent);
+  margin-bottom: 20px;
   }
 
   .container {
@@ -120,6 +128,7 @@
   <!-- HERO SECTION                              -->
   <!-- ======================================== -->
   <section class="hero">
+    <img src="profile.jpg" alt="Taner Hansen" class="profile-pic">
     <h1>Taner Hansen</h1>
     <p class="role">Data Analyst</p>
     <p>Currently in graduate school — M.S. Business Analytics &amp; Data Science</p>
