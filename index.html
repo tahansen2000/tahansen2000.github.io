@@ -31,12 +31,13 @@
     padding: 0;
   }
   .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;      
   border: 3px solid var(--accent);
-  margin-bottom: 20px;
+  flex-shrink: 0;
+  margin-top: 18px;
   }
 
   .container {
@@ -82,11 +83,12 @@
     border: 1px solid var(--accent);
     border-radius: 4px;
     text-decoration: none;
+    color: var(--accent);
   }
 
   .button:hover {
     background: var(--accent);
-    color: var(--background);
+    color: #ffffff;
   }
 
   /* ============================================ */
@@ -117,6 +119,21 @@
     margin-top: 0;
     color: var(--heading);
   }
+  .hero-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  }
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  flex-shrink: 0;
+  }
 
 </style>
 </head>
@@ -127,16 +144,20 @@
   <!-- ======================================== -->
   <!-- HERO SECTION                              -->
   <!-- ======================================== -->
-  <section class="hero">
+<section class="hero">
+  <div class="hero-row">
     <img src="profile.jpg" alt="Taner Hansen" class="profile-pic">
-    <h1>Taner Hansen</h1>
-    <p class="role">Data Analyst</p>
-    <p>Currently in graduate school — M.S. Business Analytics &amp; Data Science</p>
 
-    <!-- TODO: replace # with your real links -->
-    <a class="button" href="https://www.linkedin.com/in/taner-hansen" target="_blank">LinkedIn</a>
-    <a class="button" href="https://github.com/tahansen2000" target="_blank">GitHub</a>
-  </section>
+    <div>
+      <h1>Taner Hansen</h1>
+      <p class="role">Data Analyst</p>
+      <p>Currently in graduate school — M.S. Business Analytics &amp; Data Science</p>
+
+      <a class="button" href="https://www.linkedin.com/in/taner-hansen" target="_blank">LinkedIn</a>
+      <a class="button" href="https://github.com/tahansen2000" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
 
   <!-- ======================================== -->
   <!-- ABOUT SECTION                             -->
