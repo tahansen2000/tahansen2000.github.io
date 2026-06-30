@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL Report — Taner Hansen</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+
+  /* ============================================ */
+  /*  COLORS                                       */
+  /* ============================================ */
+  :root {
+    --background: #161F1B;
+    --text: #E8E4D9;
+    --heading: #FFFFFF;
+    --accent: #C9874C;
+    --card: #1F2A24;
+    --border: #324038;
+  }
+
+  /* ============================================ */
+  /*  BASIC PAGE SETUP                             */
+  /* ============================================ */
+  body {
+    background: linear-gradient(to bottom, #161F1B, #2A4A3A);
+    min-height: 100%;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2, h3 {
+    color: var(--heading);
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  section {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ============================================ */
+  /*  BACK BUTTON                                  */
+  /* ============================================ */
+  .button {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px 5px 0 0;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--accent);
+  }
+
+  .button:hover {
+    background: var(--accent);
+    color: #ffffff;
+  }
+
+  /* ============================================ */
+  /*  REPORT HEADER                                */
+  /* ============================================ */
+  .report-header {
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .report-header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .report-header .subtitle {
+    color: var(--accent);
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  /* ============================================ */
+  /*  SCREENSHOT / IMAGE BLOCKS                    */
+  /* ============================================ */
+  .screenshot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .screenshot h3 {
+    margin-top: 0;
+  }
+
+  .screenshot img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin-top: 10px;
+  }
+
+  .screenshot p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  /* ============================================ */
+  /*  FOOTER                                       */
+  /* ============================================ */
+  .footer {
+    padding: 30px 0;
+    border-bottom: none;
+    font-size: 14px;
+    color: var(--border);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ======================================== -->
+  <!-- BACK BUTTON                               -->
+  <!-- ======================================== -->
+  <div style="padding-top: 20px;">
+    <a class="button" href="index.html">← Back to Portfolio</a>
+  </div>
+
+  <!-- ======================================== -->
+  <!-- REPORT HEADER                             -->
+  <!-- ======================================== -->
+  <div class="report-header">
+    <h1>Uncovering Insights with SQL</h1>
+    <p class="subtitle">A short subtitle or description of the project</p>
+    <p>
+This report explores a relational hospital database consisting of four linked tables: patients, doctors, admissions, and province names.
+Using SQL, I queried across these tables to uncover insights around patient demographics, admission patterns, diagnoses, and physician activity.
+The goal was to practice writing multi-table joins, aggregations, and filtering logic while drawing meaningful conclusions from a realistic healthcare dataset.
+    </p>
+  </div>
+
+  <!-- ======================================== -->
+  <!-- SCHEMA                              -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Schema</h2>
+    <p>Here is the schema for the utilized tables.</p>
+
+    <div class="screenshot">
+      <h3>Query: Example Query Name</h3>
+      <img src="images/schema.png" alt="Schema">
+    </div>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- SECTION 2                                 -->
+  <!-- ======================================== -->
+  <section>
+    <h2>Question 1</h2>
+    <p>
+Show all of the patients grouped into weight groups.
+Show the total amount of patients in each weight group.
+Order the list by the weight group decending.
+
+For example, if they weight 100 to 109 they are placed in the 100 weight group, 110-119 = 110 weight group, etc.</p>
+
+    <div class="screenshot">
+      <h3>Query 1</h3>
+      <img src="images/q1.png" alt="Query 1 Screenshot">
+    </div>
+
+    <div class="screenshot">
+      <h3>Results</h3>
+      <p>Here are the results:</p>
+      <img src="images/a1.png" alt="Results 2 Screenshot">
+    </div>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- FOOTER                                    -->
+  <!-- ======================================== -->
+  <section class="footer">
+    <a class="button" href="index.html">← Back to Portfolio</a>
+  </section>
+
+</div>
+
+</body>
+</html>
