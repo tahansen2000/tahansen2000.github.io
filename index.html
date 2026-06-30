@@ -17,7 +17,7 @@
   --heading: #FFFFFF;
   --accent: #C9874C;      
   --card: #1F2A24;
-  --border: #324038;
+  --border: #C9874C;
 }
 
   /* ============================================ */
@@ -119,6 +119,29 @@
     margin-bottom: 15px;
   }
 
+  .card summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .card summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .card summary::before {
+    content: "▸ ";
+    color: var(--heading);
+  }
+
+  .card[open] summary::before {
+    content: "▾ ";
+  }
+
+  .card .card-body {
+    margin-top: 15px;
+  }
   .card h3 {
     margin-top: 0;
     color: var(--heading);
@@ -179,41 +202,56 @@ My goal is to build a career as a data analyst or data scientist, helping organi
   <!-- ======================================== -->
   <!-- PROJECTS SECTION                          -->
   <!-- ======================================== -->
-  <section>
-    <h2>Projects</h2>
-    
-    <div class="card">
-      <h3><a href="https://github.com/tahansen2000/heart-disease-risk-prediction" target="_blank">Heart Disease Risk Prediction &amp; Clustering</a></h3>
+<section>
+  <h2>Projects</h2>
+
+  <details class="card">
+    <summary>Heart Disease Risk Prediction &amp; Clustering</summary>
+    <div class="card-body">
       <p>
         Predicting heart disease diagnosis and identifying patient risk clusters
         using a Neural Network and K-Means on the UCI Heart Disease dataset.
       </p>
       <br>
       <p class="button-row">
-      <a class="button" href="https://github.com/tahansen2000/heart-disease-risk-prediction/blob/main/github_heardiseaseproject.pdf" target="_blank">Final Report</a>
-      <a class="button" href="https://github.com/tahansen2000/heart-disease-risk-prediction/blob/main/final.ipynb" target="_blank">Python Notebook</a>
+        <a class="button" href="https://github.com/tahansen2000/heart-disease-risk-prediction/blob/main/github_heardiseaseproject.pdf" target="_blank">Final Report</a>
+        <a class="button" href="https://github.com/tahansen2000/heart-disease-risk-prediction/blob/main/final.ipynb" target="_blank">Python Notebook</a>
+        <a class="button" href="https://github.com/tahansen2000/heart-disease-risk-prediction" target="_blank">GitHub Repository</a>
       </p>
     </div>
- <div class="card">
-      <h3><a href="https://banking-dashboard-tahansen2000.streamlit.app/" target="_blank">Customer Banking Analytics Dashboard</a></h3>
+  </details>
+
+  <details class="card">
+    <summary>Customer Banking Analytics Dashboard</summary>
+    <div class="card-body">
       <p>
-This is a sample dashboard built from two banking datasets.
-The first lets you explore account balances by branch or account type using the dropdown above the chart.
-The second shows daily transaction trends over time, broken down by branch, so you can compare activity across locations.
+        This is a sample dashboard built from two banking datasets.
+        The first lets you explore account balances by branch or account type using the dropdown above the chart.
+        The second shows daily transaction trends over time, broken down by branch, so you can compare activity across locations.
       </p>
       <br>
       <p class="button-row">
-      <a class="button" href="https://github.com/tahansen2000/banking-dashboard/blob/main/app.py" target="_blank">Code</a>
+        <a class="button" href="https://banking-dashboard-tahansen2000.streamlit.app/" target="_blank">Streamlit Dashboard</a>
+        <a class="button" href="https://github.com/tahansen2000/banking-dashboard/blob/main/app.py" target="_blank">Code</a>
+
       </p>
     </div>
-    <div class="card">
-      <h3><a href="sql_report.html">SQL Query Examples</a></h3>
+  </details>
+
+  <details class="card">
+    <summary>SQL Query Examples</summary>
+    <div class="card-body">
       <p>
-		This report explores a relational hospital database consisting of four linked tables: patients, doctors, admissions, and province names. Using SQL, I queried across these tables to uncover insights around patient demographics, admission patterns, diagnoses, and physician activity.
-		The goal was to practice writing multi-table joins, aggregations, and filtering logic while drawing meaningful conclusions from a realistic healthcare dataset.
+        This report explores a relational hospital database consisting of four linked tables: patients, doctors, admissions, and province names. Using SQL, I queried across these tables to uncover insights around patient demographics, admission patterns, diagnoses, and physician activity.
+        The goal was to practice writing multi-table joins, aggregations, and filtering logic while drawing meaningful conclusions from a realistic healthcare dataset.
+      </p>
+      <br>
+      <p class="button-row">
+        <a class="button" href="sql_report.html">SQL Queries</a>
       </p>
     </div>
-  </section>
+  </details>
+</section>
 
   <!-- ======================================== -->
   <!-- SKILLS SECTION                            -->
